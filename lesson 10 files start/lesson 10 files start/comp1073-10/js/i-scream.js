@@ -4,7 +4,7 @@ var header = document.querySelector('header');
 var section = document.querySelector('section');
 
 /* STEP 3: Store the URL of a JSON file in a variable */
-var requestURL = "https://raw.githubusercontent.com/sdhaka123/sdhaka123.github.io/master/lesson%2010%20files%20start/comp1073-10/js/i-scream.json";
+var requestURL = "https://raw.githubusercontent.com/Joshua-lebreton/Joshua-Lebreton2.github.io/master/lesson%2010%20files%20start/lesson%2010%20files%20start/comp1073-10/js/i-scream.json";
 
 /* STEP 4: Create a new XHR object */
 let request = new XMLHttpRequest();
@@ -43,7 +43,6 @@ function populateHeader(jsonObj){
 
 }
 
-
 /* STEP 10a: Assemble the showTopFlavors() function */
 function topFlavors(jsonObj){
     
@@ -61,8 +60,7 @@ function topFlavors(jsonObj){
         let p2 = document.createElement('p2');
         let list = document.createElement('ul');
         // STEP 10e: Set the textContent property for each of the above elements (except the UL), based on the JSON content
-        //https://raw.githubusercontent.com/sdhaka123/sdhaka123.github.io/master/lesson%2010%20files%20start/comp1073-10/images/'  + topFlavors[i].image);
-        img.setAttribute('src','https://raw.githubusercontent.com/sdhaka123/sdhaka123.github.io/master/lesson%2010%20files%20start/comp1073-10/images/'  + topFlavors[i].image);
+        img.setAttribute('src','https://raw.githubusercontent.com/Joshua-lebreton/Joshua-Lebreton2.github.io/master/lesson%2010%20files%20start/lesson%2010%20files%20start/comp1073-10/images/'  + topFlavors[i].image);
         img.setAttribute('height', "50px");
         console.log(topFlavors[i].image + '      ' +topFlavors[i].name)
         img.setAttribute('alt',topFlavors[i].name);
